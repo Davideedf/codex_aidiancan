@@ -77,7 +77,16 @@ tests/          单元测试
 - 加入 rerank、hybrid search 和答案引用编号
 - 用 PostgreSQL 保存会话、任务和反馈
 
+# 1. 进入项目 + 激活环境
+cd D:\code\codex\codex_aidiancan
+.\.venv\Scripts\Activate.ps1
 
+# 2. 调试用（不带 reload）
+python -m uvicorn app.main:app --host 127.0.0.1 --port 8000
+python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+
+# 3. 端口报错就执行
+taskkill /IM python.exe /F
 
 <img width="980" height="3363" alt="image" src="https://github.com/user-attachments/assets/d6ec45d7-7772-492a-8945-2d9a09fcdfbe" />
 
