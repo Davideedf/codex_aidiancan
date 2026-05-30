@@ -83,6 +83,8 @@ cd D:\code\codex\codex_aidiancan
 
 # 2. 调试用（不带 reload）
 python -m uvicorn app.main:app --host 127.0.0.1 --port 8000
+
+
 python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 
 # 3. 端口报错就执行
