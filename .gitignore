@@ -1,0 +1,11 @@
+.venv/
+.idea/
+__pycache__/
+.pytest_cache/
+.env
+*.egg-info/
+~$*
+*.docx
+data/knowledge_index.json
+data/documents/*
+!data/documents/.gitkeep

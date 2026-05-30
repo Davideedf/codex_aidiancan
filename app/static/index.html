@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>企业知识库问答 Agent</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">KA</span>
+          <div>
+            <h1>企业知识库问答 Agent</h1>
+            <p id="status">检查服务状态...</p>
+          </div>
+        </div>
+
+        <section class="panel">
+          <h2>知识库</h2>
+          <form id="upload-form" class="upload-form">
+            <input id="file-input" type="file" name="files" multiple accept=".txt,.md,.csv,.json,.log" />
+            <button type="submit">上传</button>
+          </form>
+          <div id="documents" class="document-list"></div>
+          <button id="clear-button" class="secondary-button" type="button">清空索引</button>
+        </section>
+      </aside>
+
+      <section class="workspace">
+        <div id="messages" class="messages"></div>
+        <form id="ask-form" class="ask-bar">
+          <textarea id="question" rows="2" placeholder="输入企业制度、流程、产品资料相关问题"></textarea>
+          <button type="submit">发送</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
