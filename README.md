@@ -76,3 +76,8 @@ tests/          单元测试
 - 增加流式输出和 WebSocket
 - 加入 rerank、hybrid search 和答案引用编号
 - 用 PostgreSQL 保存会话、任务和反馈
+
+
+
+<img width="980" height="3363" alt="image" src="https://github.com/user-attachments/assets/d6ec45d7-7772-492a-8945-2d9a09fcdfbe" />
+
